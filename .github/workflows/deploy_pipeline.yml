@@ -7,13 +7,14 @@ on:
 
 jobs:
   simple_deployment_pipeline:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: akhileshns/heroku-deploy@v3.8.9
+      - uses: akhileshns/heroku-deploy@v3.9.9
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "fierce-scrubland-23190"
           heroku_email: "mrlamchensian@gmail.com"
           healthcheck: "https://fierce-scubland-23190.herokuapp.com/health"
           checkstring: "ok!"
+          delay: 5
