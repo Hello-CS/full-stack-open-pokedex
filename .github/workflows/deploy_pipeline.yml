@@ -18,3 +18,4 @@ jobs:
           healthcheck: "https://fierce-scrubland-23190.herokuapp.com/health"
           checkstring: "ok!"
           delay: 5
+          rollbackonhealthcheckfailed: true
