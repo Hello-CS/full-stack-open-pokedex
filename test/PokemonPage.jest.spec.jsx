@@ -9,12 +9,12 @@ import PokemonPage from '../src/PokemonPage'
 
 jest.mock('axios')
 
-const previous = {
+const Previous = {
   url: 'https://pokeapi.co/api/v2/pokemon/132/',
   name: 'ditto',
   id: 132
 }
-const next = {
+const Next = {
   url: 'https://pokeapi.co/api/v2/pokemon/134/',
   name: 'vaporeon',
   id: 134
